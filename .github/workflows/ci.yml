@@ -1,0 +1,13 @@
+name: Workshop CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo Workshop CI says hello
